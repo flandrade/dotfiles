@@ -2,7 +2,7 @@
 
 My dotfiles with [Stow](https://www.gnu.org/software/stow/). 
 
-## Font:
+## Font
 
 Install [FiraCode](https://github.com/tonsky/FiraCode): 
 
@@ -11,7 +11,7 @@ brew tap caskroom/fonts
 brew cask install font-fira-code
 ```
  
-## Prezto for Zsh: 
+## Prezto for Zsh 
 
 Install [prezto](https://github.com/sorin-ionescu/prezto).
 
@@ -20,7 +20,7 @@ Install [prezto](https://github.com/sorin-ionescu/prezto).
 - Install [iTerm](https://www.iterm2.com). 
 - Add [Dracula theme](https://draculatheme.com/iterm/).
 
-## Dotfiles:  
+## Dotfiles  
 
 ```
 brew install stow
