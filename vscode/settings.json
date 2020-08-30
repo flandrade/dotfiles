@@ -60,6 +60,11 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
 
+  // Spell Checker
+  "cSpell.enabledLanguageIds": [
+    "markdown"
+  ],
+
   // Others
   "workbench.editor.highlightModifiedTabs": true,
   "editor.cursorBlinking": "smooth",
