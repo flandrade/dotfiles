@@ -1,36 +1,68 @@
-# Dotfiles 
-
-My dotfiles with [Stow](https://www.gnu.org/software/stow/). 
-
-## Font
-
-Install [FiraCode](https://github.com/tonsky/FiraCode): 
-
 ```
-brew tap caskroom/fonts 
-brew cask install font-fira-code
+          ██            ██     ████ ██  ██
+         ░██           ░██    ░██░ ░░  ░██
+         ░██  ██████  ██████ ██████ ██ ░██  █████   ██████
+      ██████ ██░░░░██░░░██░ ░░░██░ ░██ ░██ ██░░░██ ██░░░░
+     ██░░░██░██   ░██  ░██    ░██  ░██ ░██░███████░░█████
+    ░██  ░██░██   ░██  ░██    ░██  ░██ ░██░██░░░░  ░░░░░██
+██  ░░██████░░██████   ░░██   ░██  ░██ ███░░██████ ██████
+     ░░░░░░  ░░░░░░     ░░    ░░   ░░ ░░░  ░░░░░░ ░░░░░░
 ```
- 
-## Prezto for Zsh 
 
-Install [prezto](https://github.com/sorin-ionescu/prezto).
+# Dotfiles
 
-## iTerm 
+My set of configuration files. These opinionated dotfiles are managed with
+[Stow](https://www.gnu.org/software/stow/).
 
-- Install [iTerm](https://www.iterm2.com). 
-- Add [Dracula theme](https://draculatheme.com/iterm/).
+These dotfiles has configurations for zsh and prezto with custom
+Powerlevel10k theme, vim, tmux, git with diff-so-fancy, etc.
 
-## Dotfiles  
+This repo doesn't bootstrap Mac OS.
+
+## Install Stow
 
 ```
 brew install stow
 stow <dir>
 ```
 
-## VSCode
+## Dotfiles Usage
 
-Copy `VSCode/settings.json` to: 
+By default, stow will create symlinks for files in the parent directory of
+where you execute the command. This dotfiles setup assumes the repo is
+located in the root of your home directory `~/dotfiles`. and all stow
+commands should be executed in that directory.
+
+**NOTE:** Stow can only create a symlink if a config file does not exist,
+so you must delete it first before you can install a new one with Stow.
+
+Fetch dotfiles from github:
 
 ```
-~/Library/Application Support/Code/User
-``` 
+git clone https://github.com/flandrade/dotfiles ~/dotfiles
+```
+
+You can manually install each package:
+
+```
+stow vim
+```
+
+or automatic install everything:
+
+```sh
+for d in $(ls -d */ | cut -f1 -d '/');
+do
+    ( stow "$d"  )
+done
+```
+
+## VSCode Settings
+
+Copy `vscode/settings.json`:
+
+```
+cp vscode/settings.json ~/Library/Application Support/Code/User/settings.json
+```
+
+Reopen VS Code to activate new settings.
