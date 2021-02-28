@@ -56,13 +56,3 @@ do
     ( stow "$d"  )
 done
 ```
-
-## VSCode Settings
-
-Copy `vscode/settings.json`:
-
-```
-cp vscode/settings.json ~/Library/Application Support/Code/User/settings.json
-```
-
-Reopen VS Code to activate new settings.
