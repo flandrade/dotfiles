@@ -7,7 +7,6 @@
 
 #
 # General
-#
 
 # Set case-sensitivity for completion, history lookup, etc.
 # zstyle ':prezto:*:*' case-sensitive 'yes'
@@ -73,11 +72,14 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
-#zstyle ':prezto:module:editor' ps-context 'yes'
+
+zstyle ':prezto:module:editor' ps-context 'yes'
 
 #
 # Git
-#
+# IMPORTANT to avoid conflicts with grahite.dev
+zstyle ':prezto:module:git:alias' skip 'yes'
+
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 # zstyle ':prezto:module:git:status:ignore' submodules 'all'
