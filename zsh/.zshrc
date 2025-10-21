@@ -38,11 +38,12 @@ load-nvmrc() {
     nvm use
   fi
 }
-add-zsh-hook chpwd load-nvmrc
+# add-zsh-hook chpwd load-nvmrc
 load-nvmrc # Need to run this on startup if in a directory with .nvmrc
 
 # asdf
-. "$HOME/.asdf/asdf.sh"
+# Homebrew asdf (Apple Silicon)
+[[ -s "/opt/homebrew/opt/asdf/libexec/asdf.sh" ]] && . "/opt/homebrew/opt/asdf/libexec/asdf.sh"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
