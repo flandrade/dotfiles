@@ -1,0 +1,41 @@
+{
+    "window.commandCenter": true,
+
+    // Theme
+    "workbench.colorTheme": "Dracula Theme",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontVariations": false,
+
+    // Format on save
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+
+    // No wrap long lines in html
+    "html.format.wrapLineLength": 0,
+
+    // Minimap
+    "editor.minimap.enabled": false,
+    "editor.minimap.maxColumn": 120,
+
+    "redhat.telemetry.enabled": true,
+
+    // Terminal
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.external.osxExec": "Ghostty.app",
+    "terminal.integrated.fontSize": 12,
+    "workbench.panel.defaultLocation": "right",
+
+    // When enabled, will trim trailing whitespace when you save a file
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    // Default end of line character
+    "files.eol": "\n",
+
+    // Icon theme
+    "workbench.iconTheme": "vscode-icons",
+}
