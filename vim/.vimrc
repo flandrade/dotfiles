@@ -22,13 +22,6 @@ filetype plugin on      " enable filetype-specific plugins
 " color
 set t_Co=256
 set background=dark
-" let g:solarized_termcolors=256
-" let g:solarized_termtrans=1
-" colorscheme solarized
-
-" column-width visual indication
-let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=235 guibg=#001D2F
 
 " tabs and indenting
 set autoindent          " auto indenting

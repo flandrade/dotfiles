@@ -49,3 +49,4 @@
 # resize-overlay-duration = 4s 200ms
 theme = Dracula
 font-family = "MesloLGS NF"
+keybind = shift+enter=text:\x1b\r
