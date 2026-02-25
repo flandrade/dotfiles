@@ -44,6 +44,7 @@ load-nvmrc # Need to run this on startup if in a directory with .nvmrc
 # asdf
 # Homebrew asdf (Apple Silicon)
 [[ -s "/opt/homebrew/opt/asdf/libexec/asdf.sh" ]] && . "/opt/homebrew/opt/asdf/libexec/asdf.sh"
+export PATH="$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
@@ -66,3 +67,5 @@ esac
 # pnpm end
 
 . "$HOME/.local/bin/env"
+
+source /Users/fernandaandrade/.config/broot/launcher/bash/br
