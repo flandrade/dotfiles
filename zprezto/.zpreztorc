@@ -32,6 +32,7 @@ zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
   'editor' \
+  'fzf-tab' \
   'history' \
   'directory' \
   'spectrum' \
@@ -41,8 +42,7 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'autosuggestions' \
-  'prompt' \
-  'fzf-tab'
+  'prompt'
 
 #
 # Autosuggestions
@@ -99,10 +99,10 @@ zstyle ':prezto:module:git:alias' skip 'yes'
 zstyle ':prezto:module:history' histfile "${ZDOTDIR:-$HOME}/.zsh_history"
 
 # Set the maximum  number  of  events  stored  in  the  internal history list.
-zstyle ':prezto:module:history' histsize 10000
+zstyle ':prezto:module:history' histsize 100000
 
 # Set the maximum number of history events to save in the history file.
-zstyle ':prezto:module:history' savehist 10000
+zstyle ':prezto:module:history' savehist 100000
 
 #
 # History Substring Search
@@ -128,6 +128,8 @@ zstyle ':prezto:module:history-substring-search' unique 'yes'
 
 # Enable prefixed search.
 zstyle ':prezto:module:history-substring-search' prefixed 'yes'
+
+# Enable history search.
 
 #
 # macOS
